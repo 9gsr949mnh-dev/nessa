@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janessa's Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 Happy Birthday Janessa! 🎉</h1>
+        </header>
+
+        <!-- Photo Section -->
+        <section class="photo-section">
+            <img id="photo" src="photo.jpg" alt="Janessa" class="birthday-photo">
+            <!-- Replace 'photo.jpg' with your image file path -->
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section">
+            <p id="message" class="birthday-message">
+                <!-- Add your personalized message here -->
+            </p>
+        </section>
+
+        <!-- Countdowns -->
+        <section class="countdown-section">
+            <div class="countdown">
+                <h2>⏰ Until Your Birthday</h2>
+                <div class="countdown-timer" id="birthdayCountdown">
+                    <div class="time-unit">
+                        <span class="number" id="days">0</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="hours">0</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="minutes">0</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="seconds">0</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="countdown">
+                <h2>💕 Until Our Anniversary</h2>
+                <div class="countdown-timer" id="anniversaryCountdown">
+                    <div class="time-unit">
+                        <span class="number" id="annDays">0</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="annHours">0</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="annMinutes">0</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="number" id="annSeconds">0</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini Game Section -->
+        <section class="game-section">
+            <h2>🎮 Play a Game</h2>
+            <div class="game-container">
+                <p>Click the heart to earn points! 💖</p>
+                <button id="heartButton" class="heart-button">💖</button>
+                <p class="score">Score: <span id="score">0</span></p>
+                <p class="combo">Combo: <span id="combo">0</span>x</p>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section class="music-section">
+            <h2>🎵 Birthday Music</h2>
+            <audio id="music" controls>
+                <source src="birthday-music.mp3" type="audio/mpeg">
+                <!-- Add your music file here: replace 'birthday-music.mp3' with your audio file path -->
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
